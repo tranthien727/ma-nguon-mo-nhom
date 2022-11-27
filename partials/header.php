@@ -249,6 +249,13 @@
             font-weight: bold;
         }
         /* close info */
+        /* footer */
+        .footer{
+            background:rgb(29, 27, 26);
+            color:white;
+            height:100px;
+        }
+        /* footer */
     </style>
 </head>
 <body>
