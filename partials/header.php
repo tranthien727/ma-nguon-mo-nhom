@@ -256,6 +256,58 @@
             height:100px;
         }
         /* footer */
+        /* dangky login*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        .dangky{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 100px;
+        }
+
+        h1, td{
+            color: DodgerBlue;
+            font-weight: bold;
+        }
+
+
+        .dangky input[type=text], input[type=password] {
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            width:100%;
+            resize: vertical;
+            padding:15px;
+            border-radius:15px;
+            border:0;
+            box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+        }
+        .dangky input[type=text]:focus, input[type=password]:focus {
+            outline: none;
+        }
+        .signupbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        button:hover {
+            opacity:1;
+        }
+        .signupbtn {
+            width: 30%;
+            border-radius:15px;
+            border:0;
+            box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+        }
+        .dk{
+            text-decoration: none;
+            color:#f2f2f2;
+        }
+        /* dangky login*/
     </style>
 </head>
 <body>
