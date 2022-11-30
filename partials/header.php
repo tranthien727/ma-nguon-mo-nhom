@@ -378,7 +378,15 @@
                 <a class="nav-link" href=""><i class="fa fa-book"></i> Bài tập</a>
             </li>
             <li class="nav-item">
-                <a class='nav-link' href=''><i class='fa fa-shopping-cart'></i> Đơn hàng</a>                
+            <?php 
+                    if (isset($_SESSION['MaNguoidung']) && $_SESSION['MaNguoidung']){
+                        $MaNguoidung=$_SESSION['MaNguoidung'];
+                        echo "<a class='nav-link' href='order.php?MaNguoidung=$MaNguoidung'><i class='fa fa-shopping-cart'></i> Đơn hàng</a>";
+                    }
+                    else{
+                        echo "<a class='nav-link' href=''><i class='fa fa-shopping-cart'></i> Đơn hàng</a>";
+                    }
+                ?>               
             </li>
             <li class="nav-item">
                 <a class="nav-link" href=""><i class="fa fa-envelope"></i> Phản hồi</a>
