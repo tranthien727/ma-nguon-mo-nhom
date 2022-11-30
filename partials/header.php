@@ -1,5 +1,6 @@
 <?php include ('config/constraint.php'); ?>
 <?php session_start(); ?>
+<?php $cart=(isset($_SESSION['cart']))? $_SESSION['cart']:[]; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -338,7 +339,7 @@
         <div class="container-fluid">
         <a href="<?php echo URL; ?>">ICT Shop</a>
         <div class="d-flex justify-content-center">
-            <a  href="">Giỏ hàng <i class="fa fa-cart-plus"></i></a>
+            <a  href="cart-view.php">Giỏ hàng <i class="fa fa-cart-plus">[<?php echo count($cart); ?>]</i></a>
         </div>
         <div class="d-flex">
             <?php 
