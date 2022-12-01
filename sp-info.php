@@ -50,9 +50,14 @@
                     </tbody>
                 </table>
                 <p class="gia"><?php echo currency_format($rows["Giatien"]) ?></p>
-
-                <a href=''><button type='submit'class='btn btn-success'>Đặt hàng</button></a><br><br>
-
+                <?php 
+                                    if (isset($_SESSION['Hinhanh']) && $_SESSION['Hinhanh']){
+                                        echo "<a href='cart.php?Masp=$rows[Masp]'><button type='submit' name='dathang' class='btn btn-success'>Đặt hàng</button></a><br><br>";
+                                    }
+                                    else{
+                                        echo "<a href='login.php'><button type='submit'class='btn btn-success'>Đặt hàng</button></a><br><br>";
+                                    } 
+                                ?>
                 <a href='javascript: history.go(-1)'>Quay về</a>
             </div>
         </div>

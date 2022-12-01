@@ -331,6 +331,17 @@
             color:#f2f2f2;
         }
         /* dangky login*/
+        /* search */
+        .search-container{
+            float:right;
+            width: 300px;
+        }
+        .search-icon button{
+            float:right;
+            width: 50px;
+            height: 50px;
+        }
+        /* close search */
     </style>
 </head>
 <body>
