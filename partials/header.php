@@ -400,7 +400,7 @@
                 ?>               
             </li>
             <li class="nav-item">
-                <a class="nav-link" href=""><i class="fa fa-envelope"></i> Phản hồi</a>
+                <a class="nav-link" href="phanhoi.php"><i class="fa fa-envelope"></i> Phản hồi</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-mobile"></i> Điện thoại</a>
