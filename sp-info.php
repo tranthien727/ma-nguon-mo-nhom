@@ -51,8 +51,8 @@
                 </table>
                 <p class="gia"><?php echo currency_format($rows["Giatien"]) ?></p>
                 <?php 
-                                    if (isset($_SESSION['Hinhanh']) && $_SESSION['Hinhanh']){
-                                        echo "<a href='cart.php?Masp=$rows[Masp]'><button type='submit' name='dathang' class='btn btn-success'>Đặt hàng</button></a><br><br>";
+                                    if (isset($_SESSION['Email']) && $_SESSION['Email']){
+                                        echo "<a href='cart.php?Masp=$id'><button type='submit' name='dathang' class='btn btn-success'>Đặt hàng</button></a><br><br>";
                                     }
                                     else{
                                         echo "<a href='login.php'><button type='submit'class='btn btn-success'>Đặt hàng</button></a><br><br>";

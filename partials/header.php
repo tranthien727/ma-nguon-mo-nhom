@@ -359,7 +359,6 @@
                     <li class="nav-item dropdown">
                         <a class="navbar-brand" href="#" role="button" data-bs-toggle="dropdown"><img class="rounded-pill" style="width:30px;" src="HinhanhSP/'.$_SESSION["Hinhanh"].'"></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Profile</a></li>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
@@ -408,6 +407,10 @@
                     <li><a class="dropdown-item" href="#">Apple</a></li>
                     <li><a class="dropdown-item" href="#">SamSung</a></li>
                     <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                    <li><a class="dropdown-item" href="#">Vsmart</a></li>
+                    <li><a class="dropdown-item" href="#">Oppo</a></li>
+                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                    <li><a class="dropdown-item" href="#">LG</a></li>
                 </ul>
             </li>
         </ul>

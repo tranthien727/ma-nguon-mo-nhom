@@ -10,7 +10,9 @@ include "PHPMailer-master/src/SMTP.php";
  
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-$Email=$_SESSION['Email'];
+if (isset($_SESSION['Email']) && $_SESSION['Email']){
+    $Email=$_SESSION['Email'];
+}
 if(isset($_POST['submit'])){
     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
     try {
