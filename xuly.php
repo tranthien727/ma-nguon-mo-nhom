@@ -1,4 +1,5 @@
-<?php include 'partials/header.php'; ?>
+<?php ob_start();
+include 'partials/header.php'; ?>
 <?php
  
         // Nếu không phải là sự kiện đăng ký thì không xử lý
@@ -167,4 +168,5 @@
         else
             echo "Có lỗi xảy ra trong quá trình đăng ký. <a href=''>Thử lại</a>";
     ?>
-<?php include 'partials/footer.php'; ?>    
+<?php include 'partials/footer.php';
+ob_end_flush(); ?>    
