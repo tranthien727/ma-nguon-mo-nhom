@@ -9,8 +9,9 @@
             }
         }
     }
-    $Hoten=$_SESSION['Hoten'];
-    $MaNguoidung=$_SESSION['MaNguoidung'];
+    if (isset($_SESSION['MaNguoidung']) && $_SESSION['MaNguoidung']){
+        $MaNguoidung=$_SESSION['MaNguoidung'];
+    }
     if(isset($_POST['submit'])){
         $format = "Y-m-d H:i:s";
         $Ngaydat = date($format, time());

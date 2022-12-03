@@ -41,7 +41,7 @@
                                 <h2 class='sp' style='background-color:white'><?php echo  $rows['Tensp'] ?></h2>
                                 <h3 style='background-color:white;color:#d0021c;font-weight: bold;'><?php echo currency_format($rows['Giatien']) ?></h3>
                                 <?php 
-                                    if (isset($_SESSION['Hinhanh']) && $_SESSION['Hinhanh']){
+                                    if (isset($_SESSION['Email']) && $_SESSION['Email']){
                                         echo "<a href='cart.php?Masp=$rows[Masp]'><button type='submit' name='dathang' class='btn btn-success'>Đặt hàng</button></a><br><br>";
                                     }
                                     else{
